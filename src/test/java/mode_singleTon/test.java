@@ -1,5 +1,6 @@
 package mode_singleTon;
 
+
 import org.junit.Test;
 
 import com.mode.SingleTon1;
