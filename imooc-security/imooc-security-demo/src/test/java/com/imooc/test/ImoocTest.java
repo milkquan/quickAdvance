@@ -32,7 +32,17 @@ public class ImoocTest {
 	@Test
 	public void testQureySuccess() throws Exception{
 		mockmvc.perform(MockMvcRequestBuilders.get("/user").contentType(MediaType.APPLICATION_JSON_UTF8))
-		.andExpect(MockMvcResultMatchers.status().isOk())
-		.andExpect(MockMvcResultMatchers.jsonPath("$.length()").value(3));
+		.andExpect(MockMvcResultMatchers.status().isOk()) //response 状态码
+		.andExpect(MockMvcResultMatchers.jsonPath("$.length()").value(3)) //验证条件
+		.andReturn().getResponse().getContentAsString(); //返回值
+	}
+	
+	@Test
+	public void testQureyParamSuccess() throws Exception{
+		mockmvc.perform(MockMvcRequestBuilders.get("/user/param")
+				.param("userName", "baby")
+				.contentType(MediaType.APPLICATION_JSON_UTF8))
+				.andExpect(MockMvcResultMatchers.status().isOk())
+				.andExpect(MockMvcResultMatchers.jsonPath("$.length()").value(3));
 	}
 }

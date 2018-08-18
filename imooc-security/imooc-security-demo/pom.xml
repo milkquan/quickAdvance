@@ -16,6 +16,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-test</artifactId>
       </dependency>
+      <!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->  
   </dependencies>
   <!-- 按照springboot特有的方式进行打包 -->
   <!--  <build>
