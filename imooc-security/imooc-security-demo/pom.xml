@@ -6,4 +6,11 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>imooc-security-demo</artifactId>
+   <dependencies>
+  	<dependency>
+  		<groupId>com.imooc.security</groupId>
+    	<artifactId>imooc-security-browser</artifactId>
+    	<version>${imooc.security.version}</version>
+  	</dependency>
+  </dependencies>
 </project>

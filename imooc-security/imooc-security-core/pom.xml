@@ -6,4 +6,53 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>imooc-security-core</artifactId>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.springframework.cloud</groupId>
+    	<artifactId>spring-cloud-starter-oauth2</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-data-redis</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-jdbc</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>mysql</groupId>
+    	<artifactId>mysql-connector-java</artifactId>
+  	</dependency>
+  	<!-- 实现第三方登录 如QQ登录，wechart 登录 spring-social -->
+  	<dependency>
+  		<groupId>org.springframework.social</groupId>
+    	<artifactId>spring-social-config</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework.social</groupId>
+    	<artifactId>spring-social-core</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework.social</groupId>
+    	<artifactId>spring-social-security</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework.social</groupId>
+    	<artifactId>spring-social-web</artifactId>
+  	</dependency>
+  	<!-- java工具包,对字符串，集合，反射等操作 -->
+  	<dependency>
+  		<groupId>commons-lang</groupId>
+    	<artifactId>commons-lang</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>commons-collections</groupId>
+    	<artifactId>commons-collections</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>commons-beanutils</groupId>
+    	<artifactId>commons-beanutils</artifactId>
+  	</dependency>
+  	
+  </dependencies>
 </project>
