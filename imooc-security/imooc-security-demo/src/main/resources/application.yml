@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver 
+    url: jdbc:mysql://192.168.84.102:3306/imooc?useUnicode=yes?characterEncoding=utf8
+    username: root
+    password: root
+  session:
+    store-type: none
+#配置服务端口    
+server:
+  port: 8081
+
+#关闭spring security 默认登录配置
+security:
+  basic:
+    enabled: false
