@@ -41,8 +41,8 @@ public class UserController {
 		return users;		
 	}
 	
-	@RequestMapping(value="/user/param",method=RequestMethod.GET)
-	public List<UserTO> queryByPage(@RequestParam(value ="userName",required=true) String userName,@PageableDefault Pageable page){	
+	@RequestMapping(value="/user/page",method=RequestMethod.GET)
+	public List<UserTO> queryByPage(@RequestParam(value ="userName",required=false) String userName,@PageableDefault Pageable page){	
 		List<UserTO> users = new ArrayList<>();
 		users.add(new UserTO("tom","123456"));
 		users.add(new UserTO("jerry","123456"));

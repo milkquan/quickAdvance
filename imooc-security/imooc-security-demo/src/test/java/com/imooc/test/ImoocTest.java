@@ -45,4 +45,17 @@ public class ImoocTest {
 				.andExpect(MockMvcResultMatchers.status().isOk())
 				.andExpect(MockMvcResultMatchers.jsonPath("$.length()").value(3));
 	}
+	
+	@Test
+	public void testCreateSuccess() throws Exception{
+		
+		String content = "";
+		mockmvc.perform(MockMvcRequestBuilders.post("/user")
+				.content(content) // 要插入的json数组
+				.contentType(MediaType.APPLICATION_JSON_UTF8))
+				.andExpect(MockMvcResultMatchers.status().isOk())
+				.andExpect(MockMvcResultMatchers.jsonPath("$.id").value(1));
+	}
+	
+	
 }

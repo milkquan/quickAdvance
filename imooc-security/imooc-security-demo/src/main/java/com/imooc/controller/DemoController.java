@@ -10,6 +10,7 @@ public class DemoController {
 	
 	@GetMapping(value="/hello")
 	public String hello() {
+		System.out.println("xxxxxxxxxxxx");
 		return "hello spring security";
 	}
 }
