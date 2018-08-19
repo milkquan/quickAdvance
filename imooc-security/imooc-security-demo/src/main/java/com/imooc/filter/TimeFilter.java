@@ -21,24 +21,24 @@ public class TimeFilter implements Filter{
 	
 	@Override
 	public void destroy() {
-		Log.info("====time filter destory====");
+//		Log.info("====time filter destory====");
 		
 	}
 
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
-		Log.info("====time filter start====");
+//		Log.info("====time filter start====");
 		chain.doFilter(request, response);
-		Log.info("====time filter finish====");
+//		Log.info("====time filter finish====");
 		
 	}
 
 	@Override
 	public void init(FilterConfig arg0) throws ServletException {
 		
-		System.out.println("====time filter init====");
-		Log.info("====time filter init====");		
+//		System.out.println("====time filter init====");
+//		Log.info("====time filter init====");		
 	}
 
 }

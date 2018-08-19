@@ -25,6 +25,21 @@
         <artifactId>spring-boot-starter-test</artifactId>
       </dependency>
       <!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->  
+      <dependency>
+	    <groupId>io.springfox</groupId>
+	    <artifactId>springfox-swagger2</artifactId>
+	    <version>2.8.0</version>
+	</dependency> 
+	<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+	<dependency>
+	    <groupId>io.springfox</groupId>
+	    <artifactId>springfox-swagger-ui</artifactId>
+	    <version>2.8.0</version>
+	</dependency>
+	<dependency>
+        <groupId>com.github.tomakehurst</groupId>
+        <artifactId>wiremock-standalone</artifactId>
+      </dependency>	  
   </dependencies>
   <!-- 按照springboot特有的方式进行打包 -->
   <!--  <build>

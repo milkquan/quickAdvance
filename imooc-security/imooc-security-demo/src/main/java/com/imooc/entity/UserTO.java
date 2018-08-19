@@ -2,6 +2,8 @@ package com.imooc.entity;
 
 import com.fasterxml.jackson.annotation.JsonView;
 
+import io.swagger.annotations.ApiModelProperty;
+
 public class UserTO {
 	
 	//use JsonView 根据不同视图显示不同内容 1.用接口显示不同视图
@@ -9,6 +11,7 @@ public class UserTO {
 	public interface UserSimpleView{};
 	public interface UserDetailView extends UserSimpleView{};
 	
+	@ApiModelProperty(value="用户名")
 	private String userName;
 	private String password;
 	public UserTO(String userName, String password) {

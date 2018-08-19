@@ -22,32 +22,32 @@ public class TimeInterceptor implements HandlerInterceptor {
 	@Override
 	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception exception)
 			throws Exception {
-		Log.info("======afterCompletion========");
+//		Log.info("======afterCompletion========");
 		String name = request.getAttribute("name").toString();
 		String date = request.getAttribute("date").toString();
-		Log.info("======afterCompletion name: "+name);
-		Log.info("======afterCompletion date: "+date);
-		Log.info("======afterCompletion exception: "+exception);
+//		Log.info("======afterCompletion name: "+name);
+//		Log.info("======afterCompletion date: "+date);
+//		Log.info("======afterCompletion exception: "+exception);
 	}
 
 	@Override
 	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView)
 			throws Exception {
-		Log.info("======postHandle========");
+//		Log.info("======postHandle========");
 		String name = request.getAttribute("name").toString();
 		String date = request.getAttribute("date").toString();
-		Log.info("======postHandle name: "+name);
-		Log.info("======postHandle date: "+date);
+//		Log.info("======postHandle name: "+name);
+//		Log.info("======postHandle date: "+date);
 		
 	}
 
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-		Log.info("======preHandle========");
+//		Log.info("======preHandle========");
 		request.setAttribute("name", "barry");
 		request.setAttribute("date", DateUtil.format(new Date(), ""));
-		Log.info(((HandlerMethod)handler).getBean().getClass().getName());
-		Log.info(((HandlerMethod)handler).getMethod().getName());
+//		Log.info(((HandlerMethod)handler).getBean().getClass().getName());
+//		Log.info(((HandlerMethod)handler).getMethod().getName());
 		return true;
 	}
 
